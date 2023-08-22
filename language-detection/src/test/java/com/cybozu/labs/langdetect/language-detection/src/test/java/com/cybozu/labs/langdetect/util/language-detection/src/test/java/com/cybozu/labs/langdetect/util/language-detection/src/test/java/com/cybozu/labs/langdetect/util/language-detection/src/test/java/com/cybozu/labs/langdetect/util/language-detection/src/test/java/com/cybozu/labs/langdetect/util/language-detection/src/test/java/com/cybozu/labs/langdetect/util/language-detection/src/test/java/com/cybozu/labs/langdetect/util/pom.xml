@@ -1,0 +1,19 @@
+@@ -297,18 +297,6 @@
+                </ الاستبعاد >
+            </ الاستثناءات >
+        </ التبعية >
+        < التبعية >
+            < groupId >info.cukes</ groupId >
+            < artifactId >cucumber-junit</ artifactId >
+            < الإصدار > ${cucumber.version} </ version >
+            < نطاق > اختبار </ نطاق >
+        </ التبعية >
+        < التبعية >
+            < groupId >info.cukes</ groupId >
+            < artifactId >cucumber-java</ artifactId >
+            < الإصدار > ${cucumber.version} </ version >
+            < نطاق > اختبار </ نطاق >
+        </ التبعية >
+    </ التبعيات >
+
+</ المشروع >

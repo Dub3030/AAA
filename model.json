@@ -1,0 +1,77 @@
+{
+    "functions": [
+        {
+            "name": "main",
+            "body": [
+                {
+                    "function": "H",
+                    "params": {},
+                    "inputs": {},
+                    "outputs": {},
+                    "inouts": {
+                        "target": {
+                            "name": "a"
+                        }
+                    }
+                },
+                {
+                    "function": "CX",
+                    "params": {},
+                    "inputs": {},
+                    "outputs": {},
+                    "inouts": {
+                        "target": {
+                            "name": "b"
+                        },
+                        "control": {
+                            "name": "a"
+                        }
+                    }
+                }
+            ],
+            "operand_declarations": {},
+            "local_handles": [],
+            "port_declarations": {
+                "a": {
+                    "direction": "inout",
+                    "name": "a",
+                    "size": {
+                        "expr": "1"
+                    }
+                },
+                "b": {
+                    "direction": "inout",
+                    "name": "b",
+                    "size": {
+                        "expr": "1"
+                    }
+                }
+            },
+            "param_decls": {}
+        }
+    ],
+    "kind": "user",
+    "classical_functions": [
+        {
+            "name": "cmain",
+            "body": [
+                {
+                    "name": "result",
+                    "var_type": {
+                        "kind": "histogram"
+                    }
+                },
+                {
+                    "invoked_expression": {
+                        "function": "sample",
+                        "target_function": "main"
+                    },
+                    "assigned_variable": "result"
+                },
+                {
+                    "saved_variable": "result"
+                }
+            ]
+        }
+    ]
+}
